@@ -1,0 +1,9 @@
+# Assignment 2: The Dirty Ledger
+
+Course: ICA-F26
+Assignment: Week 2 - Loading, Cleaning and Data Quality
+
+Name: Huzaifa Millwala
+ERP: 36137
+Instructor: Irfan Nabi 
+Topic: Data Cleaning and Data Quality
