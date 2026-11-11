@@ -1,0 +1,49 @@
+# Assignment 2: The Dirty Ledger
+## 1. Initial Dataset Inspection
+
+**Name:** HUZAIFA MILLWALA
+**ERP:** 36137
+**Course:** ICA
+
+### Dataset Overview
+
+The dataset contains 97 rows and 6 columns. It includes weekly prices for four products across two cities, covering January to March 2026.
+
+The columns are:
+- Date
+- Item
+- City
+- Price
+- Unit
+- Data Label
+
+### 2. Problems Identified
+
+1. **Missing Value:** One price is missing for Pulse C in City 2 on 1 January 2026.
+
+2. **Incorrect Formatting:** One price is written as 1,250, which needs to be checked and converted into a numeric format.
+
+3. **Unusual Price:** A price of 9999 appears for Sweetener D in City 1. This needs investigation.
+
+4. **Inconsistent Product Name:** One record uses "oil b" instead of "Oil B".
+
+5. **Duplicate Record:** The record for Staple A, City 1, dated 8 January 2026 appears twice.
+
+6. **Data Types:** The date and price columns are currently stored as text.
+
+### 3. Planned Cleaning Decisions
+
+| Problem | Planned decision | Reason |
+|---|---|---|
+| Missing price | Investigate and flag | Avoid guessing a price |
+| Price 1,250 | Convert and investigate | Check numeric formatting |
+| Price 9999 | Flag for verification | Could be an error |
+| oil b | Standardize to Oil B if confirmed | Consistent naming |
+| Duplicate | Remove extra copy after verification | Avoid double counting |
+| Date format | Convert to datetime | Improve analysis |
+| Price format | Convert to numeric | Allow calculations |
+
+### 4. Initial Conclusion
+
+The dataset contains formatting issues, missing information, a duplicate record and unusual values. These problems should be investigated before making changes.
+
